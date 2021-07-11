@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <img
+        src="./src/logo.png"
+        alt=""
+        width="80"
+        height="80"
+        align="center"
+        class="logo-img"
+      />
+      <a id="anc" href="./index.html"><b>Home</b></a>
+      <a id="anc" href="./Products.html"><b>Products</b></a>
+      <a id="anc" href="./Services.html"><b>Services</b></a>
+      <a id="anc" href="./About_Us.html"><b>About Us</b></a>
+      <a id="anc" href="#foot"><b>Contact Us</b></a>
+      <a id="user">User</a>
+      <a class="login" href="./login.html">Login</a>
+      <input type="search" class="search" placeholder="Search Here" />
+    </nav>
+    <aside>
+      <a href="./form.html">Register</a>
+      <a href="./notifications.html">Notifications</a>
+      <ul class="list">
+        <li><a href="./Products.html">New Products</a></li>
+        <li><a href="./Products.html">Updates</a></li>
+      </ul>
+    </aside>
+<div>
+    <fieldset >
+    <legend>Login</legend>
+    <form action="">
+        <label for="">Email<sup><span style="color: red;">*</span></sup> :</label><br>
+        <input type="email" name="" id="email" placeholder="Enter Your Email"><br>
+        <label for="">Password<sup><span style="color: red;">*</span></sup> :</label><br>
+        <input type="password" name="" id="pass" placeholder="Set Your Password"><br>
+        <button id="submit" style="padding: 10px;">Submit</button>
+        <button id="clear" style="padding: 10px;">Clear</button>
+    </form>
+</fieldset>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br>
+<footer class="foot" id="foot">
+    <iframe
+      class="lfoot"
+      width="35%"
+      class="maps"
+      height="400"
+      frameborder="2"
+      scrolling="no"
+      marginheight="0"
+      marginwidth="0"
+      src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=19.17127500109175,%2077.33248472213747+(Eagle%20Corp)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+    ></iframe>
+    <div class="rfoot">
+      <h1><u> Contact US </u></h1>
+      <ul>
+        <li>Phone No. : +918275199525</li>
+        <li>
+          Email : <a href="skjaved633@gmail.com">skjaved633@gmail.com</a>
+        </li>
+        <li>
+          Address : Nanded, Maharashtra <br />
+          India
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <footer class="sf">
+    <div id="i">
+      <a href="www.instagram.com"
+        ><img src="./src/i.png" alt="" width="35px" height="35px"
+      /></a>
+    </div>
+    <div id="fb">
+      <a href="www.facebook.com"
+        ><img src="./src/f.png" alt="" width="35px" height="35px"
+      /></a>
+    </div>
+    <br>
+    <div id="cop" > Copyright &#169 2021 Blaze Tech<sup>TM</sup> All Rights Reserved | Designed And Developed By <b> Shaikh Javed </b></div>
+  </footer>
+</body>
+<script>
+  window.onscroll = function () {
+    myFunction();
+  };
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+</script>
+</html>

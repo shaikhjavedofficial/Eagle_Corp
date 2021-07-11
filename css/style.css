@@ -1,17 +1,36 @@
 body {
     margin: 0;
     font-size: 22px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Gill Sans", sans-serif;
+    background-image: url("pngegg (3).png");
+    background-size: 1350px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+a{
+    text-decoration: none;
 }
 .login{
     float: right;
     text-decoration: none;
     margin-left: 10px;
+    background-color: white;
+    border-radius: 50px;
+    padding: 10PX;
+    color:black;
+}
+.login:hover{
+    background-color: rgb(46, 46, 46);
+    color:white;
 }
 #user{
     text-decoration: none;
     float: right;
     margin-left: 10px;
+    text-align: center;
+    background-color: gray;
+    padding: 5px;
+    border-radius: 50px;
 }
 .logo-img {
     float: left;
@@ -28,15 +47,15 @@ body {
     text-align: center;
     overflow: hidden;
     text-decoration: none;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
-
 #anc {
     background-color: white;
     background-size: 30px;
     border: rgb(255, 255, 255);
     padding: 14px 18px;
-    font-size: 16px;
-    color: rgb(72, 72, 245);
+    font-size: 20px;
+    color: black;
     font-family: "Times New Roman", Times, serif;
     text-decoration: none;
     border-radius: 50px;
@@ -45,8 +64,8 @@ body {
 }
 
 #anc:hover {
-    background-color: rgb(247, 240, 183);
-    color: black;
+    background-color: rgb(46,46,46);
+    color: white;
 }
 .sticky {
     position: fixed;
@@ -63,21 +82,35 @@ body {
     text-align: center;
     float: right;
 }
-
-a.active {
+.active {
     background-color: cornflowerblue;
     color: white;
+    background-size: 30px;
+    border: rgb(255, 255, 255);
+    padding: 14px 18px;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: none;
+    border-radius: 50px;
+    float: left;
+    margin-left: 10px;
 }
 .content{
-    background-color: rgb(255, 255, 255);
-    height: 1000px;
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 50px;
+    font-size: 60px;
+    background-color: rgb(94, 93, 93);
+    opacity: 0.8;
+    color:white;
+    border-radius: 50px;
 }
 aside{
     background-color:rgb(255, 255, 255);
     padding: 30px;
-    height: 600px;
     width: 150px;
     float: left;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 aside a{
     text-decoration: none;
@@ -86,13 +119,53 @@ aside a{
     background-color: rgb(255, 255, 255);
     color: black;
     display: block;
+    padding: 10px;
 }
 aside a:hover{
-    background-color: rgb(247, 240, 183);
-    color: black;
+    background-color: rgb(46,46,46);
+    color: white;
 
 }
+.list{
+    font-size:large;
+}
+fieldset {
+    position: static;
+    background-color: silver;
+    opacity: 0.9;
+    width: 400px;
+    text-align: justify;
+    margin-left:550px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
 .foot{
-    background-color: rgb(168, 168, 168);
+    margin-top: 1px;
+    background-color: silver;
+    opacity: 0.9;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.lfoot{
+    display: inline-block;
+}
+.rfoot{
+    display: inline-block;
+    float:right;
+    margin-right: 20px;
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+
+}
+.sf{
+    background-color: silver;
+    opacity: 0.9;
     text-align: center;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    margin-top: 1px
+}
+.sf #i{
+    display: inline-block;
+}
+.sf #fb{
+    display: inline-block;
 }
