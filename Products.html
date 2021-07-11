@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <title>Home</title>
+  </head>
+  <style>
+    .product{
+text-align: center;
+background-color: silver;
+opacity: 0.9;
+right: 0px;
+margin-left: 250px;
+}
+.p1{
+    right: 0px;
+    background-color: silver;
+    opacity: 0.9;
+    text-align: center;
+    margin-left: 250px;
+}
+#buy{
+    background-color:white;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: large;
+}
+</style>
+  <body>
+    <nav id="navbar">
+      <img
+        src="./src/logo.png"
+        alt=""
+        width="80"
+        height="80"
+        align="center"
+        class="logo-img"
+      />
+      <a id="anc" href="./index.html"><b>Home</b></a>
+      <a  class="active" href="./Products.html"><b>Products</b></a>
+      <a id="anc" href="./Services.html"><b>Services</b></a>
+      <a id="anc" href="./About_Us.html"><b>About Us</b></a>
+      <a id="anc" href="#foot"><b>Contact Us</b></a>
+      <a id="user">User</a>
+      <a class="login" href="./login.html">Login</a>
+      <input type="search" class="search" placeholder="Search Here" />
+    </nav>
+    <aside>
+      <a href="./form.html">Register</a>
+      <a href="./notifications.html">Notifications</a>
+      <ul class="list">
+        <li><a href="./Products.html">New Products</a></li>
+        <li><a href="./Products.html">Updates</a></li>
+      </ul>
+    </aside>
+    <h1 class="product">
+      <i> <u> Products </u></i>
+    </h1>
+    <div class="p1"><br> <img src="./src/p1.png" alt=""><br>
+            <h1><b><u>Blaze-21</u></b></h1> 
+            <p>21th Gen Blaze® Core™ mobile processors power the ultimate thin & light laptops with industry-leading CPU performance, discrete-level graphics, amazing AI acceleration, and great battery life. Blaze® Optane™ memory accelerates, Blaze-21 Comes With 2.7 GHz Turbo Boost Technology With All Industry Application Purpose.</p>
+            <p>Register To Buy :</p>
+            <button id="buy"><a href="./form.html" style="color: black;" ><b> Buy </b></a></button>
+    </div>
+    <br>
+    <div class="p1"><br> <img src="./src/p2.png" alt=""><br>
+            <h1><b><u>Blaze-21 MAX</u></b></h1> 
+            <p>21th Gen Blaze® Core™ mobile processors power the ultimate thin & light laptops with industry-leading CPU performance, discrete-level graphics, amazing AI acceleration, and great battery life. Blaze® Optane™ memory accelerates, Blaze-21 MAX Comes With 3.2 GHz Turbo Boost Technology upto 3.7 GHz speed Special For Students and Developers to Enhance Their Performance.</p>
+            <p>Register To Buy :</p>
+            <button id="buy" ><a href="./form.html" style="color: black;" ><b> Buy </b></a></button>
+    </div>
+    <br>
+    <div class="p1"><br> <img src="./src/p3.png" alt=""><br>
+            <h1><b><u>Blaze-21 PRO</u></b></h1> 
+            <p>21th Gen Blaze® Core™ mobile processors power the ultimate thin & light laptops with industry-leading CPU performance, discrete-level graphics, amazing AI acceleration, and great battery life. Blaze® Optane™ memory accelerates, Blaze-21 PRO Comes With 3.7 GHz Turbo Boost Technology Upto 4.2 GHz Speed For Gamers and Data Analyst To Maximaise Their Gaming And Bussiness Performance.</p>
+            <p>Register To Buy :</p>
+            <button id="buy" ><a href="./form.html" style="color: black;" ><b> Buy </b></a></button>
+        </div>
+    <br><br><br><br><br><br><br>
+    <footer class="foot" id="foot">
+      <iframe
+        class="lfoot"
+        width="35%"
+        class="maps"
+        height="400"
+        frameborder="2"
+        scrolling="no"
+        marginheight="0"
+        marginwidth="0"
+        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=19.17127500109175,%2077.33248472213747+(Eagle%20Corp)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+      ></iframe>
+      <div class="rfoot">
+        <h1><u> Contact US </u></h1>
+        <ul>
+          <li>Phone No. : +918275199525</li>
+          <li>
+            Email : <a href="skjaved633@gmail.com">skjaved633@gmail.com</a>
+          </li>
+          <li>
+            Address : Nanded, Maharashtra <br />
+            India
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <footer class="sf">
+      <div id="i">
+        <a href="www.instagram.com"
+          ><img src="./src/i.png" alt="" width="35px" height="35px"
+        /></a>
+      </div>
+      <div id="fb">
+        <a href="www.facebook.com"
+          ><img src="./src/f.png" alt="" width="35px" height="35px"
+        /></a>
+      </div>
+      <br>
+      <div id="cop" > Copyright &#169 2021 Blaze Tech<sup>TM</sup> All Rights Reserved | Designed And Developed By <b> Shaikh Javed </b></div>
+    </footer>
+  </body>
+  <script>
+    window.onscroll = function () {
+      myFunction();
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+</html>
