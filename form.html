@@ -5,8 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <title>Home</title>
+    <title>Lform</title>
+    <script>
+      function userregister(){
+        var fname = document.getElementById("fname");
+        var lname = document.getElementById("lname");
+        sessionStorage.setItem("fname", fname.value);
+        sessionStorage.setItem("lname", lname.value);
+      }
+      function userrshow(){
+        var user = document.getElementById("user");
+        user.innerHTML = sessionStorage.getItem("fname") + " " + sessionStorage.getItem("lname");
+      }
+      function usershow(){
+        var user = document.getElementById("user");
+        user.innerHTML = localStorage.getItem("username");
+      }
+    </script>
   </head>
+  <style>
+    .button{
+    background-color:white;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: large;
+}
+  </style>
   <body>
     <nav id="navbar">
       <img
@@ -51,14 +75,14 @@
         <label for="">Country :</label><br>
         <input type="text" name="" id="country" placeholder="Enter Your First Name"><br>
         <label for="">Gender :</label><br>
-        <input type="radio" name="gender" id="gender" value="Male">Male
-        <input type="radio" name="gender" id="gender" value="Female">Female <br>
+        <input type="radio" name="gender" class="gender" value="Male">Male
+        <input type="radio" name="gender" class="gender" value="Female">Female <br>
         <label for="">Products Interested In :</label><br>
-        <input type="checkbox" name="" id="pii" >Blaze-21
-        <input type="checkbox" name="" id="pii" >Blaze-21 MAX
-        <input type="checkbox" name="" id="pii" >Blaze-21 PRO <br>
-        <button id="submit" style="padding: 10px;">Submit</button>
-        <button id="clear" style="padding: 10px;">Clear</button>
+        <input type="checkbox" name="" class="pii" >Blaze-21
+        <input type="checkbox" name="" class="pii" >Blaze-21 MAX
+        <input type="checkbox" name="" class="pii" >Blaze-21 PRO <br>
+        <button id="submit" class="button" style="padding: 10px;" onclick="userregister()">Submit</button>
+        <button id="clear" class="button" style="padding: 10px;">Clear</button>
     </form>
 </fieldset>
 </div>
@@ -118,6 +142,11 @@
     } else {
       navbar.classList.remove("sticky");
     }
+  }
+  if(localStorage.getItem("username") !== null){
+    usershow();
+  }else{
+    userrshow();
   }
 </script>
 </html>

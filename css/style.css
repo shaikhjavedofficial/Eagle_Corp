@@ -1,11 +1,9 @@
 body {
     margin: 0;
-    font-size: 22px;
+    font-size: 19px;
     font-family: "Gill Sans", sans-serif;
-    background-image: url("pngegg (3).png");
+    background-color: white;
     background-size: 1350px;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 a{
     text-decoration: none;
@@ -68,9 +66,10 @@ a{
     color: white;
 }
 .sticky {
-    position: fixed;
+    position:fixed;
     top: 0;
     width: 100%;
+    z-index: 5;
 }
 
 .sticky+.content {
@@ -98,12 +97,25 @@ a{
 .content{
     text-align: center;
     margin-left: 250px;
-    margin-right: 50px;
+    margin-right: 40px;
     font-size: 60px;
-    background-color: rgb(94, 93, 93);
+    background-color: white;
     opacity: 0.8;
-    color:white;
+    color:black;
     border-radius: 50px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    
+}
+#services{
+    text-align:start;
+    margin-left: 250px;
+    margin-right: 50px;
+    font-size: 30px;
+    background-color: white;
+    opacity: 0.8;
+    color:black;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     
 }
 aside{
@@ -132,17 +144,18 @@ aside a:hover{
 }
 fieldset {
     position: static;
-    background-color: silver;
-    opacity: 0.9;
+    background-color: white;
+    opacity: 0.7;
     width: 400px;
     text-align: justify;
     margin-left:550px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    border-radius: 50px;
 }
 .foot{
     margin-top: 1px;
-    background-color: silver;
-    opacity: 0.9;
+    background-color: rgb(233, 227, 227);
+    opacity: 0.7;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 .lfoot{
@@ -153,13 +166,13 @@ fieldset {
     float:right;
     margin-right: 20px;
     font-size: 15px;
-    color: white;
+    color: rgb(0, 0, 0);
     margin-top: 10px;
 
 }
 .sf{
-    background-color: silver;
-    opacity: 0.9;
+    background-color: rgb(233, 227, 227);
+    opacity: 0.7;
     text-align: center;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     margin-top: 1px

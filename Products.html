@@ -5,22 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <title>Home</title>
+    <title>Products</title>
+    <script>
+      function userrshow(){
+        var user = document.getElementById("user");
+        user.innerHTML = sessionStorage.getItem("fname") + " " + sessionStorage.getItem("lname");
+      }
+      function usershow(){
+        var user = document.getElementById("user");
+        user.innerHTML = localStorage.getItem("username");
+      }
+    </script>
   </head>
   <style>
     .product{
 text-align: center;
-background-color: silver;
-opacity: 0.9;
+background-color: white;
+opacity: 0.7;
 right: 0px;
+box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 margin-left: 250px;
+border-radius: 50px;
 }
 .p1{
     right: 0px;
-    background-color: silver;
-    opacity: 0.9;
+    background-color: white;
+    opacity: 0.7;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     text-align: center;
     margin-left: 250px;
+    border-radius: 50px;
 }
 #buy{
     background-color:white;
@@ -63,21 +77,21 @@ margin-left: 250px;
             <h1><b><u>Blaze-21</u></b></h1> 
             <p>21th Gen Blaze® Core™ mobile processors power the ultimate thin & light laptops with industry-leading CPU performance, discrete-level graphics, amazing AI acceleration, and great battery life. Blaze® Optane™ memory accelerates, Blaze-21 Comes With 2.7 GHz Turbo Boost Technology With All Industry Application Purpose.</p>
             <p>Register To Buy :</p>
-            <button id="buy"><a href="./form.html" style="color: black;" ><b> Buy </b></a></button>
+            <a href="./form.html" style="color: black;" ><button id="buy"><b>Buy</b></button></a>
     </div>
     <br>
     <div class="p1"><br> <img src="./src/p2.png" alt=""><br>
             <h1><b><u>Blaze-21 MAX</u></b></h1> 
             <p>21th Gen Blaze® Core™ mobile processors power the ultimate thin & light laptops with industry-leading CPU performance, discrete-level graphics, amazing AI acceleration, and great battery life. Blaze® Optane™ memory accelerates, Blaze-21 MAX Comes With 3.2 GHz Turbo Boost Technology upto 3.7 GHz speed Special For Students and Developers to Enhance Their Performance.</p>
             <p>Register To Buy :</p>
-            <button id="buy" ><a href="./form.html" style="color: black;" ><b> Buy </b></a></button>
+            <a href="./form.html" style="color: black;" ><button id="buy"><b>Buy</b></button></a>
     </div>
     <br>
     <div class="p1"><br> <img src="./src/p3.png" alt=""><br>
             <h1><b><u>Blaze-21 PRO</u></b></h1> 
             <p>21th Gen Blaze® Core™ mobile processors power the ultimate thin & light laptops with industry-leading CPU performance, discrete-level graphics, amazing AI acceleration, and great battery life. Blaze® Optane™ memory accelerates, Blaze-21 PRO Comes With 3.7 GHz Turbo Boost Technology Upto 4.2 GHz Speed For Gamers and Data Analyst To Maximaise Their Gaming And Bussiness Performance.</p>
             <p>Register To Buy :</p>
-            <button id="buy" ><a href="./form.html" style="color: black;" ><b> Buy </b></a></button>
+            <a href="./form.html" style="color: black;" ><button id="buy"><b>Buy</b></button></a>
         </div>
     <br><br><br><br><br><br><br>
     <footer class="foot" id="foot">
@@ -136,5 +150,10 @@ margin-left: 250px;
         navbar.classList.remove("sticky");
       }
     }
+  if(localStorage.getItem("username") !== null){
+    usershow();
+  }else{
+    userrshow();
+  }
   </script>
 </html>

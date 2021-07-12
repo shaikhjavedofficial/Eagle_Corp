@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
   <title>Home</title>
-</head>
+  <script>
+    function usershow() {
+      var user = document.getElementById("user");
+      user.innerHTML = localStorage.getItem("username");
+    }
 
+    function userrshow() {
+      var user = document.getElementById("user");
+      user.innerHTML = sessionStorage.getItem("fname") + " " + sessionStorage.getItem("lname");
+    }
+  </script>
+  <style>
+    body{
+      background-image: url(./src/cor.png);
+      background-repeat: no-repeat;
+      background-position: 800px 20px;
+    }
+    .events{
+      text-align: center;
+    }
+    .images{
+      width: 600px;
+      height: 400px;
+    }
+  </style>
+</head>
 <body>
   <div>
     <nav id="navbar">
@@ -31,11 +54,15 @@
       <li><a href="./Products.html">Updates</a></li>
     </ul>
   </aside>
-  <p class="content">
+  <div class="content">
     <i>WelCome <br />
       To <br />
-      Blaze Tech</i>
-  </p>
+      The World Of Technology</i>
+    <br></div>
+    <div class="events"> <h1><i>Events</i> </h1>
+      <img src="./src/new.png" alt="" class="images">
+      <p class="etext">New York Event - </p>
+    </div>
   <br><br><br><br><br><br><br>
   <footer class="foot" id="foot">
     <iframe class="lfoot" width="35%" class="maps" height="400" frameborder="2" scrolling="no" marginheight="0"
@@ -81,6 +108,11 @@
     } else {
       navbar.classList.remove("sticky");
     }
+  }
+  if (localStorage.getItem("username") !== null) {
+    usershow();
+  } else {
+    userrshow();
   }
 </script>
 

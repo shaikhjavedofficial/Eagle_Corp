@@ -5,8 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <title>Home</title>
+    <title>Login</title>
+    <script>
+      function userinfo(){
+        var username = document.getElementById("username");
+        localStorage.setItem("username", username.value);
+      }
+      function usershow(){
+        var user = document.getElementById("user");
+        user.innerHTML = localStorage.getItem("username");
+      }
+      function userrshow(){
+        var user = document.getElementById("user");
+        user.innerHTML = sessionStorage.getItem("fname") + " " + sessionStorage.getItem("lname");
+      }
+    </script>
   </head>
+  <style>
+    .button{
+    background-color:white;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: large;
+}
+  </style>
   <body>
     <nav id="navbar">
       <img
@@ -38,12 +60,14 @@
     <fieldset >
     <legend>Login</legend>
     <form action="">
+      <label for="">user name<sup><span style="color: red;">*</span></sup> :</label><br>
+      <input type="text" name="" id="username" placeholder="Enter Your user name"><br>
         <label for="">Email<sup><span style="color: red;">*</span></sup> :</label><br>
         <input type="email" name="" id="email" placeholder="Enter Your Email"><br>
         <label for="">Password<sup><span style="color: red;">*</span></sup> :</label><br>
         <input type="password" name="" id="pass" placeholder="Set Your Password"><br>
-        <button id="submit" style="padding: 10px;">Submit</button>
-        <button id="clear" style="padding: 10px;">Clear</button>
+        <button id="submit" class="button" style="padding: 10px;" onclick="userinfo()">Submit</button>
+        <button id="clear" class="button" style="padding: 10px;">Clear</button>
     </form>
 </fieldset>
 </div>
@@ -103,6 +127,11 @@
     } else {
       navbar.classList.remove("sticky");
     }
+  }
+  if(localStorage.getItem("username") !== null){
+    usershow();
+  }else{
+    userrshow();
   }
 </script>
 </html>

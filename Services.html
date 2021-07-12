@@ -6,16 +6,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
-  <title>Home</title>
+  <title>Services</title>
+  <script>
+    function userrshow(){
+        var user = document.getElementById("user");
+        user.innerHTML = sessionStorage.getItem("fname") + " " + sessionStorage.getItem("lname");
+      }
+      function usershow(){
+        var user = document.getElementById("user");
+        user.innerHTML = localStorage.getItem("username");
+      }
+  </script>
 </head>
-
+<style>
+    .services{
+        
+    }
+</style>
 <body>
   <div>
     <nav id="navbar">
       <img src="./src/logo.png" alt="" width="80" height="80" align="center" class="logo-img" />
-      <a class="active" href="./index.html"><b>Home</b></a>
+      <a id="anc" href="./index.html"><b>Home</b></a>
       <a id="anc" href="./Products.html"><b>Products</b></a>
-      <a id="anc" href="./Services.html"><b>Services</b></a>
+      <a class="active" href="./Services.html"><b>Services</b></a>
       <a id="anc" href="./About_Us.html"><b>About Us</b></a>
       <a id="anc" href="#foot"><b>Contact Us</b></a>
       <a id="user">User</a>
@@ -31,8 +45,17 @@
       <li><a href="./Products.html">Updates</a></li>
     </ul>
   </aside>
-  <div>
+  <div id="services">
       <h1><b><u>Services</u></b></h1>
+      <ul>
+        <li>Custom Builds :</li>
+        we can provide custom PC/Laptop Build Based On Customers Requirement. <br> <br>
+        <li>Upgrade :</li>
+        if Have Old Pc Then We Are Happy To Help Your Upgrade It With Blaze-21 Processor Board. <br> <br>
+        <li>Repair :</li>
+        With  our 500+ Partner Service Center You Can Repair Your Pc Without Any Hussle.
+        <a href="#foot">Find Where</a>
+      </ul>
   </div>
   <br><br><br><br><br><br><br>
   <footer class="foot" id="foot">
@@ -79,6 +102,11 @@
     } else {
       navbar.classList.remove("sticky");
     }
+  }
+  if(localStorage.getItem("username") !== null){
+    usershow();
+  }else{
+    userrshow();
   }
 </script>
 
