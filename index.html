@@ -14,7 +14,7 @@
 
     function userrshow() {
       var user = document.getElementById("user");
-      user.innerHTML = sessionStorage.getItem("fname") + " " + sessionStorage.getItem("lname");
+      user.innerHTML = localStorage.getItem("fname") + " " + localStorage.getItem("lname");
     }
   </script>
   <style>
@@ -85,7 +85,7 @@
     <p class="etext">London Event - 5th August 2021</p><br>
     <img src="./src/nd.jpg" alt="" class="images">
     <p class="etext">Delhi Event - 11th August 2021</p><br>
-    <p class="etext">Global Events are happening where Bussiness Directors and Developers join. These events will present new Products previews and let developers test it to get fair feedbacks. you can also join the event by registering yourself.</p>
+    <p class="etext">Global Events are happening where Bussiness Directors and Developers join. These events will present new Products previews and let developers test it to get fair feedbacks. you can also join the event by <b> <a href="./form.html"> registering yourself</a> </b>.</p>
   </div>
   <br><br><br><br><br><br><br>
   <footer class="foot" id="foot">
@@ -133,11 +133,12 @@
       navbar.classList.remove("sticky");
     }
   }
-  if (localStorage.getItem("username") !== null) {
-    usershow();
-  } else {
-    userrshow();
-  }
+  //if (localStorage.getItem("username") !== null) {
+  //  usershow();
+  //} else {
+  //  userrshow();
+  //}
+  usershow();
 </script>
 
 </html>

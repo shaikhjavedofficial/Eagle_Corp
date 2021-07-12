@@ -10,9 +10,9 @@
       function userinfo(){
         var username = document.getElementById("username");
         console.log
-        if(user.innerHTML !== null){
+        ///if(user.innerHTML !== null){
         localStorage.setItem("username", username.value);
-      }}
+      }
       function usershow(){
         var user = document.getElementById("user");
         user.innerHTML = localStorage.getItem("username");
@@ -131,10 +131,11 @@
       navbar.classList.remove("sticky");
     }
   }
-  if(localStorage.getItem("username") !== null){
-    usershow();
-  }else{
-    userrshow();
-  }
+ //if(localStorage.getItem("username") !== null){
+  //  userrshow();
+ // }else{
+ //   usershow();
+ // }
+ usershow();
 </script>
 </html>

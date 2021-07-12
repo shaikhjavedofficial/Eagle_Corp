@@ -100,6 +100,7 @@ a{
     margin-left: 250px;
     margin-right: 40px;
     opacity: 0.8;
+    background-color: white;
     color:black;
     border-radius: 50px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
