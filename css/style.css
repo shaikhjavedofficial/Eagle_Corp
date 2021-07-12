@@ -82,7 +82,7 @@ a{
     float: right;
 }
 .active {
-    background-color: cornflowerblue;
+    background-color: rgb(36, 39, 44);
     color: white;
     background-size: 30px;
     border: rgb(255, 255, 255);
@@ -98,20 +98,6 @@ a{
     text-align: center;
     margin-left: 250px;
     margin-right: 40px;
-    font-size: 60px;
-    background-color: white;
-    opacity: 0.8;
-    color:black;
-    border-radius: 50px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-    
-}
-#services{
-    text-align:start;
-    margin-left: 250px;
-    margin-right: 50px;
-    font-size: 30px;
-    background-color: white;
     opacity: 0.8;
     color:black;
     border-radius: 50px;
