@@ -9,15 +9,17 @@
     <script>
       function userinfo(){
         var username = document.getElementById("username");
+        console.log
+        if(user.innerHTML !== null){
         localStorage.setItem("username", username.value);
-      }
+      }}
       function usershow(){
         var user = document.getElementById("user");
         user.innerHTML = localStorage.getItem("username");
       }
       function userrshow(){
         var user = document.getElementById("user");
-        user.innerHTML = sessionStorage.getItem("fname") + " " + sessionStorage.getItem("lname");
+        user.innerHTML = localStorage.getItem("fname") + " " + localStorage.getItem("lname");
       }
     </script>
   </head>
@@ -67,7 +69,7 @@
         <label for="">Password<sup><span style="color: red;">*</span></sup> :</label><br>
         <input type="password" name="" id="pass" placeholder="Set Your Password"><br>
         <br>
-        <button id="submit" class="button" style="padding: 10px;" onclick="userinfo()">Submit</button>
+        <button id="submit" class="button" style="padding: 10px;"><a href="./index.html" onclick="userinfo()">Submit</a></button>
         <button id="clear" class="button" style="padding: 10px;">Clear</button>
     </form>
 </fieldset>

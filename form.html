@@ -10,12 +10,12 @@
       function userregister(){
         var fname = document.getElementById("fname");
         var lname = document.getElementById("lname");
-        sessionStorage.setItem("fname", fname.value);
-        sessionStorage.setItem("lname", lname.value);
+        localStorage.setItem("fname", fname.value);
+        localStorage.setItem("lname", lname.value);
       }
       function userrshow(){
         var user = document.getElementById("user");
-        user.innerHTML = sessionStorage.getItem("fname") + " " + sessionStorage.getItem("lname");
+        user.innerHTML = localStorage.getItem("fname") + " " + localStorage.getItem("lname");
       }
       function usershow(){
         var user = document.getElementById("user");
