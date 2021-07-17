@@ -1,9 +1,14 @@
+*{
+    margin:0px;
+}
 body {
-    margin: 0;
     font-size: 19px;
     font-family: "Gill Sans", sans-serif;
     background-color: white;
-    background-size: 1350px;
+    background-image: url(./src/cor.png);
+      
+      background-position: 200px 10px;
+      background-attachment: fixed;
 }
 a{
     text-decoration: none;
@@ -39,14 +44,14 @@ a{
 
 #navbar {
     background-color: rgb(255, 255, 255);
-    padding: 10px;
-    margin: 1px;
-    margin-inline-end: 0px;
-    margin-inline-start: 0px;
     text-align: center;
     overflow: hidden;
     text-decoration: none;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    top: 0px;
+    position: sticky;
+    height: 50px;
+    width: 100%;
 }
 #anc {
     background-color: white;

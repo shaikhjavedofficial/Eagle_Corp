@@ -5,8 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" media="only screen and (max-width: 600px)" type="text/css" href="./css/mobile.css" />
-  <link rel="stylesheet" media="only screen and (min-width: 601px)" type="text/css" href="./css/style.css" />
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
   <title>Home</title>
   <script>
     function usershow() {
@@ -20,13 +19,6 @@
     }
   </script>
   <style>
-    body {
-      background-image: url(./src/cor.png);
-      background-repeat: no-repeat;
-      background-position: 800px 20px;
-      background-attachment: fixed;
-    }
-
     .events {
       text-align: center;
       margin-left: 250px;
@@ -46,9 +38,9 @@
 </head>
 
 <body>
-  <div>
-    <nav id="navbar">
-      <img src="./src/logo.png" alt="" width="80" height="80" align="center" class="logo-img" />
+  <div id="navbar">
+    <nav>
+      <img src="./src/logo.png" alt="" class="logo-img" />
       <a class="active" href="./index.html"><b>Home</b></a>
       <a id="anc" href="./Products.html"><b>Products</b></a>
       <a id="anc" href="./Services.html"><b>Services</b></a>
@@ -129,25 +121,11 @@
       <a href="www.facebook.com"><img src="./src/f.png" alt="" width="35px" height="35px" /></a>
     </div>
     <br>
-    <div id="cop"> Copyright &#169 2021 Blaze Tech<sup>TM</sup> All Rights Reserved | Designed And Developed By <b>
+    <div id="cop"> Copyright &copy 2021 Blaze Tech<sup>TM</sup> All Rights Reserved | Designed And Developed By <b>
         Shaikh Javed </b></div>
   </footer>
 </body>
 <script>
-  window.onscroll = function () {
-    myFunction();
-  };
-
-  var navbar = document.getElementById("navbar");
-  var sticky = navbar.offsetTop;
-
-  function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky");
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
   //if (localStorage.getItem("username") !== null) {
   //  usershow();
   //} else {
