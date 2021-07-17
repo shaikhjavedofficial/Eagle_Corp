@@ -166,6 +166,7 @@ fieldset {
 .sf #fb{
     display: inline-block;
 }
+
 @media (max-width:500px){
     *{
         margin:0px
